@@ -1,3 +1,4 @@
-version: v1.1.0
-steps:
-  - cmd: mcr.microsoft.com/hello-world
+# version: v1.1.0
+# steps:
+#   - cmd: mcr.microsoft.com/hello-world
+az acr build --image sample/bash-echo-3.yaml --registry test678 --file Dockerfile .
